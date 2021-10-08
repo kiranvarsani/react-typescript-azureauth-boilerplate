@@ -1,0 +1,61 @@
+{
+  "name": "react-typescript-azureauth-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "^2.18.0",
+    "@azure/msal-react": "^1.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.28",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "axios": "^0.22.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "typescript": "^4.4.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "cross-env ENV=dev react-app-rewired start",
+    "build": "cross-env ENV=dev react-app-rewired build",
+    "build:DEV": "cross-env ENV=dev react-app-rewired build",
+    "build:UAT": "cross-env ENV=uat react-app-rewired build",
+    "build:PAT": "cross-env ENV=pat react-app-rewired build",
+    "build:PROD": "cross-env ENV=prod react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "config-overrides-path": "config/config-overrides",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.175",
+    "@types/react-router-dom": "^5.3.1",
+    "cross-env": "^7.0.3",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8",
+    "react-scripts": "^4.0.3"
+  }
+}
